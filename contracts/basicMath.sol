@@ -1,4 +1,5 @@
-pragma solidity >=0.4.21 <0.6.0;
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
 
 contract basicMath {
     uint256 constant private MAX_UINT256 = 2**256 - 1;
