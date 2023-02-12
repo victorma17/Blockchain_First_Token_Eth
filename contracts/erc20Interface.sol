@@ -2,7 +2,8 @@
 // ERC Token Standard #20 Interface
 // https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md
 // ----------------------------------------------------------------------------
-pragma solidity >=0.4.21 <0.6.0;
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
 
 contract ERC20Interface {
     uint256 public totSupply;

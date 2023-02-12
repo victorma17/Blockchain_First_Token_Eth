@@ -2,7 +2,8 @@
 ///Implements EIP20 token standard: https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md
 // ----------------------------------------------------------------------------
 
-pragma solidity >=0.4.21 <0.6.0;
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
 
 import "./erc20Interface.sol";
 
@@ -13,7 +14,7 @@ contract ERC20Token is ERC20Interface {
     mapping (address => mapping (address => uint256)) public allowed;
 
     uint256 public totSupply;           // Total number of tokens
-    string public name;                   // Descriptive name (i.e. For Dummies Sample Token)
+    string public name;                    // Descriptive name (i.e. For Dummies Sample Token)
     uint8 public decimals;                // How many decimals to use when displaying amounts
     string public symbol;                 // Short identifier for token (i.e. FDT)
 
