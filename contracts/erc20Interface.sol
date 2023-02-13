@@ -3,7 +3,9 @@
 // https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md
 // ----------------------------------------------------------------------------
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+// pragma solidity ^0.8.0;
+pragma solidity >=0.4.21 <0.6.0;
+
 
 interface ERC20Interface {
     // uint256 public totSupply;

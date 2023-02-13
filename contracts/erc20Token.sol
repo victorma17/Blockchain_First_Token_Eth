@@ -3,7 +3,9 @@
 // ----------------------------------------------------------------------------
 
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+// pragma solidity ^0.8.0;
+pragma solidity >=0.4.21 <0.6.0;
+
 
 import "./erc20Interface.sol";
 
@@ -24,7 +26,7 @@ contract ERC20Token is ERC20Interface {
         string memory _tokenName,
         uint8 _decimalUnits,
         string memory _tokenSymbol
-    ) {
+    ) public {
         balances[msg.sender] = _initialAmount;               // The creator owns all initial tokens
         totSupply = _initialAmount;                        // Update total token supply
         name = _tokenName;                                   // Store the token name (used for display only)
